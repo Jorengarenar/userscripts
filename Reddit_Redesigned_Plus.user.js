@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         Reddit Redesigned+
+// @version      0.1
 // @description  Works with old Reddit
 // @run-at       document-end
 // @grant        GM_addStyle
