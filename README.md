@@ -34,7 +34,7 @@
         <tr>
             <td>SteamGifts</td>
             <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/ESGST.user.js">ESGST 8.1.8 (Dev.20)</a></td>
-            <td>Best(?) ESGST version still supporting userscripts</td>
+            <td>Best(?) <a href="https://github.com/gsrafael01/ESGST">ESGST</a> version still supporting userscripts</td>
         </tr>
     </tr>
 </table>
