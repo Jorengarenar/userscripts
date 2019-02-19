@@ -9,75 +9,9 @@
 // @exclude      *reddit.com/prefs*
 // ==/UserScript==
 
-
-GM_addStyle (`
-    textarea {
-        background: var(--gray-0) !important;
-        border: 1px solid var(--gray-1) !important;
-        border-radius: 2px !important;
-    }
-    .md-spoiler-text:not(.revealed) {
-        background: var(--text-med) !important;
-    }
-    .pagename {
-        color: var(--text-normal) !important;
-    }
-`);
-
-// CSS does not want to work for 'code' tag
-$('code').attr('style', "color: #444 !important;");
-
-window.setTimeout(function(){
-    $('.play-pause').click();
-}, 1000);
-
-let tabMenu = document.getElementsByClassName('tabmenu')[0];
-$('<span class="separator">-</span>').insertBefore( $(tabMenu).children().not(":eq(0)") );
-tabMenu.className = "flat-list sr-bar hover";
-tabMenu.classList.remove('tabmenu');
-let srList = document.getElementsByClassName('sr-list')[0];
-let separator = document.createElement('span');
-separator.setAttribute('class', 'separator');
-separator.innerHTML = '&nbsp;|&nbsp;';
-srList.insertBefore(tabMenu, document.getElementsByClassName('flat-list')[1]);
-srList.insertBefore(separator, document.getElementsByClassName('flat-list')[2]);
-
 if ( document.URL.indexOf("/comments/") >= 0 ) {
     let title = "<p style='color:#444; font-size:12px'>" + document.querySelector('a.title').innerHTML + "</p>";
     $(title).insertAfter('span.domain');
-}
-
-var buttons = document.querySelectorAll('.expando-button');
-if ( document.URL.indexOf("/comments/") < 0 ) {
-    for(let i = 0; i < buttons.length; i++) {
-        buttons[i].click();
-    }
-    var expandoBool = true;
-}
-
-if (expandoBool) {
-    let headerBottomLeft = document.querySelector("#header-bottom-left");
-    let expandButton = document.createElement('button');
-    expandButton.style = "margin-left: 10px;";
-    expandButton.innerHTML = "Collapse All";
-    expandButton.onclick = function() {
-        if (expandButton.innerHTML == "Expand All") {
-            for(let i = 0; i < buttons.length; i++) {
-                if ($(buttons[i]).hasClass("collapsed")) {
-                    buttons[i].click();
-                }
-            }
-            expandButton.innerHTML = "Collapse All";
-        } else {
-            for(let i = 0; i < buttons.length; i++) {
-                if ($(buttons[i]).hasClass("expanded")) {
-                    buttons[i].click();
-                }
-            }
-            expandButton.innerHTML = "Expand All";
-        }
-    };
-    headerBottomLeft.appendChild(expandButton);
 }
 
 let post = document.getElementsByClassName("link");

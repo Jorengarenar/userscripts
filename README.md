@@ -31,5 +31,10 @@
             <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Reddit_Redesigned_Plus.user.js">Reddit Redesigned+</a></td>
             <td>An add-on to <a href="https://userstyles.org/styles/75410/reddit-redesigned-deprecated">Reddit Redesigned<a></td>
         </tr>
+        <tr>
+            <td>SteamGifts</td>
+            <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/ESGST.user.js">ESGST 8.1.8 (Dev.20)</a></td>
+            <td>Best(?) ESGST version still supporting userscripts</td>
+        </tr>
     </tr>
 </table>
