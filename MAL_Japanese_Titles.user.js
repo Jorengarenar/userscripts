@@ -1,28 +1,26 @@
 // ==UserScript==
 // @name           MAL - Japanese Titles
-// @version        1.5.0
+// @version        1.5.1
 // @description    Displays Japanese titles for anime/manga lists on MyAnimeList
 // @match          https://myanimelist.net/animelist/*
 // @match          https://myanimelist.net/mangalist/*
-// @grant          GM_xmlhttpRequest
 // @grant          GM_addStyle
+// @grant          GM_xmlhttpRequest
 // ==/UserScript==
 
 GM_addStyle(`
     .japanese_title {
         display: inline-block;
         float: left;
+        font-size: 1.3em;
         padding-right: 10px;
-        text-decoration: inherit;
     }
 
     .romanji_title {
         clear: left;
         display: inline-block;
-        filter: alpha(opacity=50);
         float: left;
         opacity: 0.5;
-        text-decoration: inherit;
     }
 `)
 
@@ -42,7 +40,6 @@ function findJapanese(element) {
     for (var i = 0; i < spaceit_pad.length; i++) {
         var dark_text = spaceit_pad[i].getElementsByClassName("dark_text");
         if (dark_text[0].innerText == "Japanese:") {
-            console.log(spaceit_pad[i].innerText);
             return spaceit_pad[i].innerText.replace("Japanese:","").trim();
         }
     }

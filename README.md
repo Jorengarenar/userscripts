@@ -11,11 +11,7 @@
     </tr>
     <tr>
     <tr>
-        <td rowspan=2>MyAnimeList</td>
-        <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/MAL_Tweaks.user.js">MAL Tweaks</a></td>
-        <td>Some small tweaks to MAL</td>
-    </tr>
-    <tr>
+        <td rowspan=1>MyAnimeList</td>
         <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/MAL_Japanese_Titles.user.js">MAL Japanese Titles</a></td>
         <td>Displays Japanese titles for anime/manga lists on MAL</td>
     </tr>
