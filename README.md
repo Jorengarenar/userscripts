@@ -13,7 +13,7 @@
     <tr>
         <td rowspan=1>MyAnimeList</td>
         <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/MAL_Japanese_Titles.user.js">MAL Japanese Titles</a></td>
-        <td>Displays Japanese titles for anime/manga lists on MAL</td>
+        <td>Titles in Japanese on MyAnimeList</td>
     </tr>
     </tr>
     <tr>
@@ -25,11 +25,6 @@
     <tr>
         <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Pocket_Better_tag_filtering.user.js">Better tag filtering</a></td>
         <td>Fork of <a href="https://greasyfork.org/en/scripts/39537-pocket-tag-filtering">Pocket tag filtering</a> by <a href="http://agj.cl">agj</a></td>
-    </tr>
-    <tr>
-        <td>Reddit</td>
-        <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Reddit_Redesigned_Plus.user.js">Reddit Redesigned+</a></td>
-        <td>An add-on to <a href="https://userstyles.org/styles/75410/reddit-redesigned-deprecated">Reddit Redesigned<a></td>
     </tr>
     <tr>
         <td>SteamGifts</td>
