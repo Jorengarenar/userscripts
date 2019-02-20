@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           MAL - Japanese Titles
-// @version        1.5.2
+// @version        0.4.2
 // @description    Displays Japanese titles for anime/manga lists on MyAnimeList
 // @include        /^https?://myanimelist.net/(anime|manga)list/\w+/
 // @grant          GM_addStyle
