@@ -2,9 +2,8 @@
 // @name         ESG - Hide entered
 // @description  Adds checkbox on the main page to hide/unhide entered giveaways while using Extended Steamgifts. Do not use with default ESG "Hide entered giveaways" option
 // @author       Jorengarenar
-// $version      1.0
-// @include      https://www.steamgifts.com/giveaways/search*
-// @include      https://www.steamgifts.com
+// $version      1.1
+// @include      https://www.steamgifts.com*
 // ==/UserScript==
 
 let checkbox = document.createElement('input');
