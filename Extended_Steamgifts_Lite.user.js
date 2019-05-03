@@ -3,7 +3,7 @@
 // @description Endless scroll, scroll to top and enter/remove buttons from ESG by Nandee. Also Hide entered checkbox by me
 // @author      Jorengarenar
 // @include     *steamgifts.com*
-// @version     1.5.2
+// @version     1.5.7
 // @require     https://github.com/Jorengarenar/userscripts/raw/master/ESG_Hide_entered.user.js
 // ==/UserScript==
 
@@ -147,6 +147,23 @@ function getUrlParameter(sParam) {
 
 // Main page button
 $("header .nav__left-container").prepend('<div id="main-page-button" class="nav__button-container"><a class="nav__button" href="https://www.steamgifts.com">SteamGifts</a></div>');
+
+// Points in page title
+document.title = "(" + document.querySelector(".nav__points").innerText + ") SteamGifts";
+window.setTimeout(function() {
+    $('.sidebar__entry-custom').click(function() {
+        window.setTimeout(function() {
+            document.title = "(" + document.querySelector(".nav__points").innerText + ") SteamGifts";
+        }, 500);
+    });
+}, 100);
+$(document).on('scroll', function() {
+    $('.sidebar__entry-custom').click(function() {
+        window.setTimeout(function() {
+            document.title = "(" + document.querySelector(".nav__points").innerText + ") SteamGifts";
+        }, 500);
+    });
+});
 
 // Endless scroll
 if ($(".pagination").length > 0 ) {
