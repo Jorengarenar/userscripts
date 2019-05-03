@@ -146,7 +146,7 @@ function getUrlParameter(sParam) {
 }
 
 // Main page button
-$("header .nav__left-container").prepend('<div class="nav__button-container"><a class="nav__button" href="https://www.steamgifts.com">SteamGifts</a></div>');
+$("header .nav__left-container").prepend('<div id="main-page-button" class="nav__button-container"><a class="nav__button" href="https://www.steamgifts.com">SteamGifts</a></div>');
 
 // Endless scroll
 if ($(".pagination").length > 0 ) {
