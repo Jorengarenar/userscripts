@@ -3,7 +3,7 @@
 // @description Endless scroll, scroll to top and enter/remove buttons from ESG by Nandee. Also Hide entered checkbox by me
 // @author      Jorengarenar
 // @include     *steamgifts.com*
-// @version     1.5.8
+// @version     1.6.1
 // @require     https://github.com/Jorengarenar/userscripts/raw/master/ESG_Hide_entered.user.js
 // ==/UserScript==
 
@@ -87,7 +87,6 @@ $("body").prepend(" \
 // Essential variables
 var path = window.location.pathname;
 var xsrf = $('input[type=hidden][name=xsrf_token]').val();
-var loggedin = ($('.nav__sits').length > 0) ? false : true;
 var lastpage = ($(".pagination__navigation:contains('Next')").length === 0);
 var currentpage = Number($('.pagination__navigation').find('.is-selected').attr('data-page-number')?$('.pagination__navigation').find('.is-selected').attr('data-page-number'):1);
 var hash = $(location).attr('hash');
@@ -270,7 +269,8 @@ $.fn.filter_ga = function() {
         var ga = $(this);
         if ($(ga).closest(".pinned-giveaways__outer-wrap").length !== 0)
             return;
-        //Read some data
+
+        // Read some data
         var url = $(ga).find('.giveaway__heading__name').attr('href');
         var c = $(ga).find('.giveaway__heading__thin').text();
         var copies = 1,
@@ -296,7 +296,6 @@ $.fn.filter_ga = function() {
         var has = Number($(".nav__points").text());
         var enough = req <= has ? true : false;
 
-        //var wishlist=(($.inArray(url,wishlist)!=-1)?true:false);
         var group = $(ga).find('.giveaway__column--group').length > 0 ? 1 : 0;
         var whitelist = $(ga).find('.giveaway__column--whitelist').length > 0 ? 1 : 0;
         var regionrestricted = $(ga).find('.giveaway__column--region-restricted').length > 0 ? 1 : 0;
@@ -314,7 +313,8 @@ $.fn.filter_ga = function() {
 $.fn.format_ga = function() {
     return $(this).each(function() {
         var ga = $(this);
-        //Read some data
+
+        // Read some data
         var url = $(ga).find('.giveaway__heading__name').attr('href');
         var code = 0;
         if (url) code = url.substring(getPos(url, '/', 2) + 1, getPos(url, '/', 3));
@@ -352,8 +352,8 @@ $.fn.format_ga = function() {
 
         var pinned=$(ga).closest(".pinned-giveaways__outer-wrap").length!==0?1:0;
 
-        //Enter/Remove button
-        if ( loggedin && active && user != username && title!="Invite Only" && $(ga).find('.giveaway__column--contributor-level--negative').length === 0) {
+        // Enter/Remove button
+        if ( active && user != username && title!="Invite Only" && $(ga).find('.giveaway__column--contributor-level--negative').length === 0) {
             $(ga).find('.giveaway__row-inner-wrap').removeClass('is-faded');
             $(ga).find(".giveaway__columns").append("<div><form>    \
                 <input type=\"hidden\" name=\"xsrf_token\" value=\"" + xsrf + "\" />    \
@@ -369,7 +369,7 @@ $.fn.format_ga = function() {
     });
 };
 
-setTimeout(function () {  $(window).trigger('scroll'); },200);
+setTimeout(function () {  $(window).trigger('scroll'); }, 200);
 
 // Format giveaways (on load)
 $('.giveaway__row-outer-wrap').format_ga();
@@ -429,11 +429,12 @@ setTimeout(function() {
             }
         });
     });
-    $(document).on('click', '.sidebar__error', function() {
-        $(this).addClass("is-hidden").parent().find(".sidebar__entry-insert").removeClass("is-hidden");
-    });
-}, 10);
 
+    // Not sure why this even was there, because of its odd behaviour, but maybe it was somehow important
+    /* $(document).on('click', '.sidebar__error', function() {
+        $(this).addClass("is-hidden").parent().find(".sidebar__entry-insert").removeClass("is-hidden");
+    }); */
+}, 10);
 
 //Scroll to top
 $("body").prepend("<div class=\"scroll-top form__submit-button\">&gt;</div>");
