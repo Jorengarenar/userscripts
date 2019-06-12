@@ -29,9 +29,9 @@
         <td>[1]</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Pocket_Items_Counter.user.js"><s>Items Counter</s></a></td>
+        <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Pocket_Items_Counter.user.js">Items Counter</a></td>
         <td>Displays count of saved items </td>
-        <td>[1]</td>
+        <td></td>
     </tr>
     <tr>
         <td rowspan=2><a href="https://www.steamgifts.com">SteamGifts</a></td>
@@ -52,4 +52,4 @@
     </tr>
 </table>
 
-[1] Pocket changed their layout, classed... everything
+[1] Pocket changed their layout, classes... everything
