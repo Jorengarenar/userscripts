@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Pocket - Items Counter
-// @description  Works only if there is nothing more to load during being on site
+// @description  Still highly bugged, thanks Pocket for turning your website upside down
 // @author       Jorengarenar
 // @version      1.5
 // @include      *://app.getpocket.com*
