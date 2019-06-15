@@ -4,7 +4,7 @@
 // @author       Jorengarenar
 // @version      1.3.8
 // @include      *steamgifts.com*
-// @include      www.steamgifts.com*
+// @include      https://www.steamgifts.com
 // ==/UserScript==
 
 let checkbox = document.createElement('input');
