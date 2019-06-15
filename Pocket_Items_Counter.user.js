@@ -3,7 +3,8 @@
 // @description  Still highly bugged, thanks Pocket for turning your website upside down
 // @author       Jorengarenar
 // @version      1.5
-// @include      *://app.getpocket.com*
+// @include      http*://app.getpocket.com*
+// @include      http*://getpocket.com/*
 // @run-at       document-end
 // ==/UserScript==
 
