@@ -4,7 +4,7 @@
 // @author       Jorengarenar
 // @version      0.2.5
 // @run-at       document-end
-// @include      *instagram.com*
+// @include      http*://*.instagram.com*
 // ==/UserScript==
 
 let rssButton = document.createElement('a');
