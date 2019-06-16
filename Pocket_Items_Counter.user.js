@@ -1,10 +1,9 @@
 // ==UserScript==
 // @name         Pocket - Items Counter
-// @description  Still highly bugged, thanks Pocket for turning your website upside down
+// @description  Works only for small number of items
 // @author       Jorengarenar
 // @version      1.7
-// @include      http*://app.getpocket.com*
-// @include      http*://getpocket.com/*
+// @include      /https?:\/\/(app\.)?getpocket.com.*/
 // @run-at       document-end
 // ==/UserScript==
 

@@ -2,8 +2,7 @@
 // @name         Extended Steamgifts Lite
 // @description  Endless scroll, scroll to top, hide entered and enter/remove buttons
 // @author       Jorengarenar
-// @include      *steamgifts.com*
-// @include      https://www.steamgifts.com
+// @include      /https?:\/\/www\.steamgifts\.com.*/
 // @version      1.7.5
 // @grant        GM_addStyle
 // ==/UserScript==

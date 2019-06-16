@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         MAL - Japanese Titles
-// @description  Titles in Japanese on MyAnimeList
+// @description  Titles in Japanese on MyAnimeList | I've blocked title change, if there is more than 100 of them on one page
 // @author       Jorengarenar
 // @version      0.8.4
-// @include      /^https?://myanimelist.net/(anime|manga)list/\w+/
-// @include      /^https?://myanimelist.net/(anime|manga)/\d+.*
-// @include      /^https?://myanimelist.net/(anime|manga)\.php\?q=.*
-// @include      /^https?://myanimelist.net/profile/\w+/
+// @include      /^https?:\/\/myanimelist.net\/(anime|manga)list\/\w+/
+// @include      /^https?:\/\/myanimelist.net\/(anime|manga)\/\d+.*/
+// @include      /^https?:\/\/myanimelist.net\/(anime|manga)\.php\?q=.*/
+// @include      /^https?:\/\/myanimelist.net\/profile\/\w+/
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 

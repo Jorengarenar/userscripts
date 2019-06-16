@@ -3,7 +3,7 @@
 // @description  Simple menu to filter entries on MAL by airing/publishing status
 // @author       Jorengarenar
 // @version      1.0.1
-// @include      /^https?://myanimelist.net/(anime|manga)list/\w+/
+// @include      /^https?:\/\/myanimelist\.net\/(anime|manga)list\/\w+/
 // @grant        GM_addStyle
 // ==/UserScript==
 

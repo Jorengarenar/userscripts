@@ -3,8 +3,7 @@
 // @description  Opens original links instead of article view
 // @author       Jorengarenar
 // @version      0.2
-// @include      http*://app.getpocket.com*
-// @include      http*://getpocket.com/*
+// @include      /https?:\/\/(app\.)?getpocket.com.*/
 // @run-at       document-end
 // ==/UserScript==
 

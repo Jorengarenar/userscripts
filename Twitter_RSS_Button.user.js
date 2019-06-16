@@ -4,7 +4,7 @@
 // @author       Jorengarenar
 // @version      0.2.4
 // @run-at       document-end
-// @include      *twitter.com/*
+// @include      /https?:\/\/twitter.com\/\.+/
 // ==/UserScript==
 
 if (document.URL.indexOf("/status/") >= 0) {

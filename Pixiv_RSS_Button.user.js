@@ -4,8 +4,7 @@
 // @author       Jorengarenar
 // @version      0.3
 // @run-at       document-end
-// @include      https://www.pixiv.net
-// @include      *pixiv.net*
+// @include      /https?:\/\/www\.pixiv\.net\/member\.php\?id=\d+/
 // ==/UserScript==
 
 let rssButton = document.createElement('a');
