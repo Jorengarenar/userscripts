@@ -46,6 +46,11 @@
         <td>Based on <a href="https://github.com/nandee95/Extended_Steamgifts">ESG</a> | Includes <i>Hide entered</i></td>
     </tr>
     <tr>
+        <td><a href="https://tapas.io">Tapas</a></td>
+        <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Tapas_Direct_URL.user.js">Direct URL</a></td>
+        <td>Get direct link to your comic to post, for example, on Reddit</td>
+    </tr>
+    <tr>
         <td><a href="https://twitter.com">Twitter</a></td>
         <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Twitter_RSS_Button.user.js">RSS Button</a></td>
         <td>RSS using <a href="https://twitrss.me">TwitRSS.me</a></td>
