@@ -2,6 +2,7 @@
 // @name         Pocket - Better tag filtering
 // @description  DEPRECATED | Shows tags toward the top that you can select to filter the list of links. Click tag to show only links that contain that tag; shift-click tag to hide links that contain it.
 // @author       Jorengarenar
+// @namespace    https://joren.ga
 // @version      1.1.2
 // @include      http*://getpocket.com/*
 // @grant        none

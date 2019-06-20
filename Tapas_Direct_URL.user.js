@@ -2,6 +2,7 @@
 // @name         Tapas - Direct URL
 // @description  Get direct link to your comic to post, for example, on Reddit
 // @author       Jorengarenar
+// @namespace    https://joren.ga
 // @version      0.1
 // @run-at       document-end
 // @include      /https?:\/\/tapas\.io\/episode\/.+/

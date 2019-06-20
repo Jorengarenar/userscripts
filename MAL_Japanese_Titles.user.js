@@ -2,6 +2,7 @@
 // @name         MAL - Japanese Titles
 // @description  Titles in Japanese on MyAnimeList | I've blocked title change, if there is more than 100 of them on one page
 // @author       Jorengarenar
+// @namespace    https://joren.ga
 // @version      0.8.4
 // @include      /^https?:\/\/myanimelist.net\/(anime|manga)list\/\w+/
 // @include      /^https?:\/\/myanimelist.net\/(anime|manga)\/\d+.*/

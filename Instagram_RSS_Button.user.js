@@ -2,6 +2,7 @@
 // @name         Instagram - RSS Buttons
 // @description  RSS using RSSHub.app
 // @author       Jorengarenar
+// @namespace    https://joren.ga
 // @version      0.2.5
 // @run-at       document-end
 // @include      /https?:\/\/www\.instagram\.com\/.+/

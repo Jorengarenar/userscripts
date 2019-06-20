@@ -2,6 +2,7 @@
 // @name         MAL - Filter by airing/publishing status
 // @description  Simple menu to filter entries on MAL by airing/publishing status
 // @author       Jorengarenar
+// @namespace    https://joren.ga
 // @version      1.0.1
 // @include      /^https?:\/\/myanimelist\.net\/(anime|manga)list\/\w+/
 // @grant        GM_addStyle
