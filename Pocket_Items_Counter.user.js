@@ -3,9 +3,10 @@
 // @description  Works only for small number of items
 // @author       Jorengarenar
 // @namespace    https://joren.ga
-// @version      1.7
+// @version      1.8
 // @include      /https?:\/\/(app\.)?getpocket.com.*/
 // @include      https://getpocket.com
+// @exclude      /https?:\/\/(app\.)?getpocket.com\/read\/.*/
 // @run-at       document-end
 // ==/UserScript==
 
@@ -19,13 +20,15 @@ function countItems(){
         try {
             document.querySelector('#counter').remove();
         } finally {
-            let number = document.getElementsByClassName('css-d4njwk').length;
-            let intext = document.createElement('li');
-            let bar = document.createElement('a');
-            intext.id = "counter";
-            intext.className = "css-1q7nt9b";
-            intext.innerHTML = '<a><span style="padding: 5px">Count:</span><span style="font-weight:bold; color: red;">' + number + '</span></a>';
-            document.querySelector('.css-7gaew3').appendChild(intext);
+            if (!window.location.href.match(/https?:\/\/(app\.)?getpocket.com\/read\/.*/)) {
+                let number = document.getElementsByClassName('css-d4njwk').length;
+                let intext = document.createElement('li');
+                let bar = document.createElement('a');
+                intext.id = "counter";
+                intext.className = "css-1q7nt9b";
+                intext.innerHTML = '<a><span style="padding: 5px">Count:</span><span style="font-weight:bold; color: red;">' + number + '</span></a>';
+                document.querySelector('.css-7gaew3').appendChild(intext);
+            }
         }
     }, 500);
 }
