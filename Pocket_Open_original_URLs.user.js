@@ -3,7 +3,7 @@
 // @description  Opens original links instead of article view
 // @author       Jorengarenar
 // @namespace    https://joren.ga
-// @version      0.2
+// @version      0.4
 // @include      /https?:\/\/(app\.)?getpocket.com.*/
 // @include      https://getpocket.com
 // @run-at       document-end
@@ -21,10 +21,15 @@ function change(queue, observer) {
         for (let link of articles_list) {
             let originalURL = link.querySelector('.css-1fzr42x > a');
             if (originalURL) {
+                let newURL = document.createElement('a');
+                newURL.href = decodeURIComponent(originalURL.href.replace("https://getpocket.com/redirect?url=", ''));
+                newURL.target = "_blank";
+                newURL.style = "font-size: 20px; line-height: 1.2em; max-height: 2.4em;";
+                newURL.className = "css-7d05mi";
+
                 let articleURL = link.querySelector('.css-7zhfhb > a');
-                let originalCopy = originalURL.cloneNode(1);
-                originalCopy.innerHTML = articleURL.innerHTML;
-                link.querySelector('.css-7zhfhb').replaceChild(originalCopy, articleURL);
+                newURL.innerText = articleURL.querySelector('div').innerText;
+                articleURL.replaceWith(newURL);
             }
         }
     }, 1000);
