@@ -37,7 +37,7 @@ $(function() {
     checkbox.click();
 
     window.setTimeout(function() {
-        if ( checkbox.checked ) {
+        if (checkbox.checked) {
             $(".sidebar__entry-insert").click(function() {
                 $(this).closest(".giveaway__row-outer-wrap").fadeOut(300);
             });
