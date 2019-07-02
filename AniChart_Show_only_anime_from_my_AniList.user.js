@@ -5,15 +5,18 @@
 // @homepageURL  https://joren.ga
 // @version      0.3.3
 // @run-at       document-end
-// @include      anichart.net
+// @include      https://anichart.net
 // @include      /https?:\/\/anichart\.net\/.*/
-// @grant       GM_getValue
-// @grant       GM_deleteValue
-// @grant       GM_setValue
-// @grant       GM_registerMenuCommand
-// @require     https://code.jquery.com/jquery-3.2.1.min.js
+
+// @grant        GM_getValue
+// @grant        GM_deleteValue
+// @grant        GM_setValue
+// @grant        GM_registerMenuCommand
+// @require      https://code.jquery.com/jquery-3.2.1.min.js
 
 // ==/UserScript==
+
+// TODO Replace jQuery
 
 var defaults = {
   myUserName: "Jorengarenar",
