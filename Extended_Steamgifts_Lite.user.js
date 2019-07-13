@@ -5,7 +5,7 @@
 // @homepageURL  https://joren.ga
 // @include      /https?:\/\/www\.steamgifts\.com.*/
 // @include      steamgifts.com
-// @version      1.7.6
+// @version      1.7.8
 // @grant        GM_addStyle
 // ==/UserScript==
 
@@ -154,21 +154,15 @@ function getUrlParameter(sParam) {
 $("header .nav__left-container").prepend('<div id="main-page-button" class="nav__button-container"><a class="nav__button" href="https://www.steamgifts.com">SteamGifts</a></div>');
 
 // Points in page title
-document.title = "(" + document.querySelector(".nav__points").innerText + "P) SteamGifts";
+var original_page_title = document.title;
+document.title = "(" + document.querySelector(".nav__points").innerText + "P) SteamGifts | " + original_page_title;
 window.setTimeout(function() {
   $('.sidebar__entry-custom').click(function() {
     window.setTimeout(function() {
-      document.title = "(" + document.querySelector(".nav__points").innerText + "P) SteamGifts";
+      document.title = "(" + document.querySelector(".nav__points").innerText + "P) SteamGifts | " + original_page_title;
     }, 500);
   });
 }, 100);
-$(document).on('scroll', function() {
-  $('.sidebar__entry-custom').click(function() {
-    window.setTimeout(function() {
-      document.title = "(" + document.querySelector(".nav__points").innerText + "P) SteamGifts";
-    }, 500);
-  });
-});
 
 // -----------------------------------------------------------------------------
 
