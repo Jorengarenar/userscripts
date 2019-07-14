@@ -5,7 +5,7 @@
 // @homepageURL  https://joren.ga
 // @include      /https?:\/\/www\.steamgifts\.com.*/
 // @include      steamgifts.com
-// @version      1.7.8
+// @version      1.7.9
 // @grant        GM_addStyle
 // ==/UserScript==
 
@@ -163,6 +163,13 @@ window.setTimeout(function() {
     }, 500);
   });
 }, 100);
+$(document).on('scroll', function() {
+  $('.sidebar__entry-custom').click(function() {
+    window.setTimeout(function() {
+      document.title = "(" + document.querySelector(".nav__points").innerText + "P) SteamGifts | " + original_page_title;
+    }, 500);
+  });
+});
 
 // -----------------------------------------------------------------------------
 
