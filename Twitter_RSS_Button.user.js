@@ -5,7 +5,7 @@
 // @homepageURL  https://joren.ga
 // @version      0.2.5
 // @run-at       document-end
-// @include      /https?:\/\/twitter.com\/\.+/
+// @include      /https?:\/\/twitter.com\/.+/
 // ==/UserScript==
 
 if (document.URL.indexOf("/status/") >= 0) {
