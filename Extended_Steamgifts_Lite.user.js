@@ -7,7 +7,7 @@
 // @exclude      /https?:\/\/www\.steamgifts\.com/giveaway/.*
 // @exclude      /https?:\/\/www\.steamgifts\.com/user/.*
 // @include      steamgifts.com
-// @version      1.8.2
+// @version      1.8.3
 // @grant        GM_addStyle
 // ==/UserScript==
 
@@ -95,6 +95,9 @@ min-width: initial !important;                                          \
 {                                                                       \
 background-color: initial !important;                                   \
 border: initial !important;                                             \
+}                                                                       \
+.giveaway__columns, .giveaway__links {                                  \
+    display: inline-flex;                                               \
 }                                                                       \
 </style>");
 
