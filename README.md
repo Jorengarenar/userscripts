@@ -12,7 +12,7 @@
     <tr>
         <td><a href=""https://github.com/>GitHub</a></td>
         <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/GitHub_Search_All_Github_by_default.user.js">Search "All Github" by default</a></td>
-        <td>Select "All GitHub" instead of "In this repository"</td>
+        <td>Selects "All GitHub" instead of "In this repository"</td>
     </tr>
     <tr>
         <td><a href="https://www.instagram.com">Instagram</a></td>
@@ -58,7 +58,7 @@
     <tr>
         <td><a href="https://tapas.io">Tapas</a></td>
         <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Tapas_Direct_URL.user.js">Direct URL</a></td>
-        <td>Get direct link to your comic to post, for example, on Reddit</td>
+        <td>Get direct link to your comic (image) for posting, e.g. on Reddit</td>
     </tr>
     <!--
     <tr>

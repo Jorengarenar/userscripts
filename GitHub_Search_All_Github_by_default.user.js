@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Search "All Github" by default
-// @description  When you are on repository page select "All GitHub" by default instead of "In this repository"
+// @description  When you are on repository page selects "All GitHub" by default instead of "In this repository"
 // @author       Jorengarenar
 // @homepageURL  https://joren.ga
 // @version      0.1
