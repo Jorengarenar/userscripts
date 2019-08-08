@@ -3,9 +3,9 @@
 // @description  RSS using RSSHub.app
 // @author       Jorengarenar
 // @homepageURL  https://joren.ga
-// @version      0.3.1
+// @version      0.3.2
 // @run-at       document-end
-// @include      /https?:\/\/www\.pixiv\.net\/member\.php\?id=\d+/
+// @include      /https?:\/\/www\.pixiv\.net\/member.*\.php\?id=\d+/
 // ==/UserScript==
 
 let rssButton = document.createElement('a');
