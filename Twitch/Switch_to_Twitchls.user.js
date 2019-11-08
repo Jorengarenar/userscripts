@@ -5,7 +5,7 @@
 // @homepageURL  https://joren.ga
 // @version      0.1
 // @run-at       document-end
-// @include      /www\.twitch\.tv\/?.*/
+// @include      /https?:\/\/www\.twitch\.tv\/?.*/
 // ==/UserScript==
 
 window.location = window.location.href.replace("www.twitch.tv", "twitchls.com");
