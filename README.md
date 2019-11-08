@@ -60,6 +60,11 @@
         <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Tapas/Direct_URL.user.js">Direct URL</a></td>
         <td>Get direct link to your comic (image) for posting, e.g. on Reddit</td>
     </tr>
+    <tr>
+        <td><a href="https://www.twitch.tv">Twitch</a></td>
+        <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Twitch/Switch_to_Twitchls.user.js">Switch to Twitchls</a></td>
+        <td>Change from twitch.tv to twitchls.com</td>
+    </tr>
     <!--
     <tr>
         <td><a href="https://twitter.com">Twitter</a></td>

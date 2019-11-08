@@ -4,7 +4,7 @@
 // @homepageURL  https://joren.ga
 // @version      0.0.2
 // @run-at       document-end
-// @include      *reddit.com/*
+// @include      https?:\/\/(www\.|old\.)?reddit.com.*
 // ==/UserScript==
 
 var btn = document.createElement("button");
