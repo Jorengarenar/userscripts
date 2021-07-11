@@ -43,6 +43,10 @@
         <td>Collapse comment trees in fashion similar to New Reddit<a></td>
     </tr>
     <tr>
+        <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Reddit/Fenced_code.user.js">Fenced code</a></td>
+        <td>Turns fenced code into code blocks on Old Reddit<a></td>
+    </tr>
+    <tr>
         <td><a href="https://www.steamgifts.com">SteamGifts</a></td>
         <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/SteamGifts/ESG_Hide_entered.user.js">ESG - Hide entered</a></td>
         <td>Hide entered giveaways (add-on to <a href="https://github.com/nandee95/Extended_Steamgifts">ESG</a>)</td>
