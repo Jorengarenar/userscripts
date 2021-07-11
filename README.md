@@ -36,7 +36,7 @@
         <td>Opens original links instead of article view</td>
     </tr>
     <tr>
-        <td rowspan=2><a href="https://old.reddit.com">Reddit (old)</a></td>
+        <td rowspan=3><a href="https://old.reddit.com">Reddit (old)</a></td>
     </tr>
     <tr>
         <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Reddit/Comment_collapser.user.js">Comment collapser</a></td>
