@@ -14,7 +14,7 @@ GM_addStyle(`
   .comment .midcol:hover { background: rgba(0, 0, 0, 0.4);   }
   .comment.deleted > .midcol          { visibility: visible; }
   .comment.deleted > .midcol > .arrow { visibility: hidden;  }
-`)
+`);
 
 window.addEventListener("click", (e) => {
   if (e.target.matches(".comment .midcol")) {

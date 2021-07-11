@@ -10,7 +10,7 @@
 GM_addStyle(`
   .comment-collapser { position: absolute; width: 5px; margin-left: 5px; margin-top: 7px; }
   .comment-collapser:hover { background: rgba(0, 0, 0, 0.4);   }
-`)
+`);
 
 function countHeight(comments, i) {
   let height = comments[i].offsetHeight;
@@ -54,6 +54,6 @@ window.addEventListener("click", (e) => {
 });
 
 document.querySelectorAll(".athing.comtr .default .comhead .togg").forEach((t) => {
-  t.addEventListener('click', generateCollapsers);
+  t.addEventListener("click", generateCollapsers);
 });
 generateCollapsers();

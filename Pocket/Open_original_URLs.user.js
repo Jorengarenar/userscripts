@@ -16,19 +16,19 @@ const config = {
 
 function change(queue, observer) {
   window.setTimeout(function() {
-    let articles_list = document.querySelectorAll('article');
-    for (let article of articles_list) {
-      let originalURL = article.querySelector('a.publisher');
-      let link = article.querySelector('.content > h2.title');
-      if (originalURL && link.querySelector('a[tabindex="0"]')) {
-        let newURL = document.createElement('a');
-        newURL.innerText = link.querySelector('a').innerText;
+    let articlesList = document.querySelectorAll("article");
+    for (let article of articlesList) {
+      let originalURL = article.querySelector("a.publisher");
+      let link = article.querySelector(".content > h2.title");
+      if (originalURL && link.querySelector("a[tabindex=\"0\"]")) {
+        let newURL = document.createElement("a");
+        newURL.innerText = link.querySelector("a").innerText;
         newURL.href = originalURL.href;
         link.replaceChild(newURL, link.childNodes[0]);
       }
     }
   }, 1000);
-};
+}
 
 const observer = new MutationObserver(change);
 change(document.body, config);

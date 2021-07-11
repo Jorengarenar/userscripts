@@ -11,7 +11,7 @@
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
-var pattern = /<span class=\"dark_text\">Japanese:<\/span> (.*?)(?:<\/div>|\n)/
+var pattern = /<span class=\"dark_text\">Japanese:<\/span> (.*?)(?:<\/div>|\n)/;
 
 // Lists, profile and search page
 var titles = document.querySelectorAll("td.title > a, .statistics-updates > .data > a, a.fw-b.fl-l");
@@ -22,9 +22,7 @@ if (titles.length <= 100) {
     GM_xmlhttpRequest({
       method: "GET",
       url: title.getAttribute("href"),
-      onload: function(response) {
-        title.innerHTML = pattern.exec(response.responseText)[1];
-      }
+      onload: (response) => { title.innerHTML = pattern.exec(response.responseText)[1]; }
     });
   }
 }

@@ -15,8 +15,6 @@
 
 // ==/UserScript==
 
-// TODO Replace jQuery
-
 var defaults = {
   myUserName: "Jorengarenar",
 };
@@ -40,9 +38,9 @@ function toggleconfig(name, e) {
 
 $.each([
   ["Username", function() {
-    var temp = prompt("Enter your AniList username", GM_getValue('myUserName', myUserName));
+    var temp = prompt("Enter your AniList username", GM_getValue("myUserName", myUserName));
     if (!!temp.match(/\w+/)) {
-      toggleconfig('myUserName', temp);
+      toggleconfig("myUserName", temp);
     } else {
       alert("invalid option");
     }
@@ -50,8 +48,6 @@ $.each([
 ], function(a, b) {
   GM_registerMenuCommand(b[0], b[1]);
 });
-
-console.log(myUserName);
 
 var query = `
 query ListView($userName: String!, $statuses: [MediaListStatus!] = [CURRENT PLANNING]) {
@@ -74,32 +70,22 @@ var variables = {
 };
 
 // Define the config we'll need for our Api request
-var url = 'https://graphql.anilist.co',
-  options = {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-    },
-    body: JSON.stringify({
-      query: query,
-      variables: variables
-    })
-  };
+var url = "https://graphql.anilist.co";
+var options = {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+  },
+  body: JSON.stringify({ query, variables })
+};
 
-
-// Make the HTTP Api request
-fetch(url, options).then(handleResponse)
-  .then(handleData)
-  .catch(handleError);
 
 function handleResponse(response) {
   return response.json().then(function(json) {
     return response.ok ? json : Promise.reject(json);
   });
 }
-
-var myAnimeIDs = [];
 
 function handleData(data) {
   for (let status of data.data.listCollection.lists) {
@@ -111,16 +97,23 @@ function handleData(data) {
 }
 
 function handleError(error) {
-  alert('Error, check console');
+  alert("Error, check console");
   console.error(error);
 }
 
+// Make the HTTP Api request
+fetch(url, options).then(handleResponse)
+  .then(handleData)
+  .catch(handleError);
+
+var myAnimeIDs = [];
+
 function removeUnlisted() {
-  let animeCards = document.querySelectorAll('div.media-card')
+  let animeCards = document.querySelectorAll("div.media-card");
 
   for (let card of animeCards) {
     card.style = "";
-    let link = card.querySelector('a.title');
+    let link = card.querySelector("a.title");
     let id = link.href.match(/\/(\d+)\//)[1];
     if (!myAnimeIDs.includes(parseInt(id))) {
       card.style = "display: none";
@@ -134,7 +127,5 @@ const config = {
 };
 
 const observer = new MutationObserver(removeUnlisted);
-
 removeUnlisted();
-
 observer.observe(document.body, config);

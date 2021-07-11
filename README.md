@@ -31,11 +31,6 @@
         <td>Titles in Japanese on MyAnimeList</td>
     </tr>
     <tr>
-        <td><a href="https://www.pixiv.net">Pixiv</a></td>
-        <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Pixiv/RSS_Button.user.js">RSS Button</a></td>
-        <td>RSS using <a href="https://rsshub.app">RSSHub</a></td>
-    </tr>
-    <tr>
         <td><a href="https://app.getpocket.com">Pocket</a></td>
         <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Pocket/Open_original_URLs.user.js">Open original URLs</a></td>
         <td>Opens original links instead of article view</td>
@@ -55,10 +50,5 @@
         <td><a href="https://www.steamgifts.com">SteamGifts</a></td>
         <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/SteamGifts/ESG_Hide_entered.user.js">ESG - Hide entered</a></td>
         <td>Hide entered giveaways (add-on to <a href="https://github.com/nandee95/Extended_Steamgifts">ESG</a>)</td>
-    </tr>
-    <tr>
-        <td><a href="https://www.twitch.tv">Twitch</a></td>
-        <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Twitch/Switch_to_Twitchls.user.js">Switch to Twitchls</a></td>
-        <td>Change from twitch.tv to twitchls.com</td>
     </tr>
 </table>

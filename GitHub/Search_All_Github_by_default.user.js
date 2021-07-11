@@ -14,13 +14,13 @@ const config = {
 };
 
 const observer = new MutationObserver( () => {
-  let inThisSearch = document.getElementById('jump-to-suggestion-search-scoped');
+  let inThisSearch = document.getElementById("jump-to-suggestion-search-scoped");
   inThisSearch.setAttribute("aria-selected", "false");
   inThisSearch.classList.remove("navigation-focus");
 
-  let globalSearch = document.getElementById('jump-to-suggestion-search-global');
+  let globalSearch = document.getElementById("jump-to-suggestion-search-global");
   globalSearch.setAttribute("aria-selected", "true");
   globalSearch.classList.add("navigation-focus");
 });
 
-observer.observe(document.querySelector('.header-search'), config);
+observer.observe(document.querySelector(".header-search"), config);

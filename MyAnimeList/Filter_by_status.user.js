@@ -19,22 +19,22 @@ GM_addStyle(`
   .status-filter input {
     vertical-align: middle;
   }
-`)
+`);
 
 // Add button to show/hide "Status filters" menu
-var filterButton = document.createElement('a');
-filterButton.innerHTML = '<i class="fa fa-filter"></i> Status filters';
-filterButton.href = "javascript: void(0);"
+var filterButton = document.createElement("a");
+filterButton.innerHTML = "<i class="fa fa-filter"></i> Status filters";
+filterButton.href = "javascript: void(0);";
 $(filterButton).click(function() {
   let e = $(".status-filter");
-  e.is(":visible") ? e.slideUp(100) : e.slideDown(100)
+  e.is(":visible") ? e.slideUp(100) : e.slideDown(100);
 });
-$('.stats').append(filterButton);
+$(".stats").append(filterButton);
 
 // Create menu
-var menu = document.createElement('div');
-menu.setAttribute('class', 'status-filter');
-menu.innerHTML = "<span><b>Hide:</b></span>"
+var menu = document.createElement("div");
+menu.setAttribute("class", "status-filter");
+menu.innerHTML = "<span><b>Hide:</b></span>";
 
 // Values of checkboxes contains jQuery selectors
 if (document.URL.indexOf("/animelist/") >= 0) {
@@ -52,19 +52,19 @@ if (document.URL.indexOf("/animelist/") >= 0) {
 }
 
 // "Below" Stats will be "Status filter" menu
-$(menu).insertAfter('.list-stats');
+$(menu).insertAfter(".list-stats");
 
-let filters = $('.status-filter input');
+let filters = $(".status-filter input");
 
 // jQuery selectors are in values of menu checkboxes
 for (let filter of filters) {
-  if (filter.type === 'checkbox') {
+  if (filter.type === "checkbox") {
     filter.onclick = function() {
       if (this.checked) {
-        $('tbody.list-item' + this.value).hide();
+        $("tbody.list-item" + this.value).hide();
       } else {
-        $('tbody.list-item' + this.value).show();
+        $("tbody.list-item" + this.value).show();
       }
-    }
+    };
   }
 }
