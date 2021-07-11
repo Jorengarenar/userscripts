@@ -15,6 +15,11 @@
         <td>Selects "All GitHub" instead of "In this repository"</td>
     </tr>
     <tr>
+        <td><a href="https://news.ycombinator.com/">Hacker News</a></td>
+        <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/HackerNews/Comment_collapse.user.js">Comment collapse</a></td>
+        <td>Collapse comment tree without scrolling to its root</td>
+    </tr>
+    <tr>
         <td rowspan=3><a href="https://myanimelist.net">MyAnimeList</a></td>
     </tr>
     <tr>
