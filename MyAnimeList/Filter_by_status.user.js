@@ -23,7 +23,7 @@ GM_addStyle(`
 
 // Add button to show/hide "Status filters" menu
 var filterButton = document.createElement("a");
-filterButton.innerHTML = "<i class="fa fa-filter"></i> Status filters";
+filterButton.innerHTML = "<i class='fa fa-filter'></i> Status filters";
 filterButton.href = "javascript: void(0);";
 $(filterButton).click(function() {
   let e = $(".status-filter");

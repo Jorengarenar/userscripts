@@ -39,7 +39,7 @@ function toggleconfig(name, e) {
 $.each([
   ["Username", function() {
     var temp = prompt("Enter your AniList username", GM_getValue("myUserName", myUserName));
-    if (!!temp.match(/\w+/)) {
+    if (temp.match(/\w+/)) {
       toggleconfig("myUserName", temp);
     } else {
       alert("invalid option");
@@ -81,6 +81,8 @@ var options = {
 };
 
 
+var myAnimeIDs = [];
+
 function handleResponse(response) {
   return response.json().then(function(json) {
     return response.ok ? json : Promise.reject(json);
@@ -105,8 +107,6 @@ function handleError(error) {
 fetch(url, options).then(handleResponse)
   .then(handleData)
   .catch(handleError);
-
-var myAnimeIDs = [];
 
 function removeUnlisted() {
   let animeCards = document.querySelectorAll("div.media-card");
