@@ -39,12 +39,12 @@
         <td rowspan=3><a href="https://old.reddit.com">Reddit (old)</a></td>
     </tr>
     <tr>
-        <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Reddit/Comment_collapser.user.js">Comment collapser</a></td>
-        <td>Collapse comment trees in fashion similar to New Reddit<a></td>
-    </tr>
-    <tr>
         <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Reddit/Better_Markdown.user.js">Better Markdown</a></td>
         <td>Replace Markdown renderer on Old Reddit with Marked<a></td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/Jorengarenar/userscripts/raw/master/Reddit/Comment_collapser.user.js">Comment collapser</a></td>
+        <td>Collapse comment trees in fashion similar to New Reddit<a></td>
     </tr>
     <tr>
         <td><a href="https://www.steamgifts.com">SteamGifts</a></td>
