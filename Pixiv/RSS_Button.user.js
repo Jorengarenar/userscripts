@@ -2,11 +2,10 @@
 // @name         Pixiv - RSS Button
 // @description  RSS using RSSHub.app
 // @author       Jorengarenar
-// @homepageURL  https://joren.ga
+// @namespace    https://joren.ga
 // @version      1.0.0
 // @run-at       document-end
 // @include      /https?:\/\/www\.pixiv\.net\/.*users\/\d+/
-// @namespace https://joren.ga
 // ==/UserScript==
 
 let rssButton = document.createElement("a");

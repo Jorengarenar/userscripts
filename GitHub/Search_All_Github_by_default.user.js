@@ -2,7 +2,7 @@
 // @name         Search "All Github" by default
 // @description  When you are on repository/user page selects "All GitHub" by default instead of "In this repository/user"
 // @author       Jorengarenar
-// @homepageURL  https://joren.ga
+// @namespace    https://joren.ga
 // @version      0.2
 // @run-at       document-end
 // @include      /https?:\/\/github\.com\/.+/

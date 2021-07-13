@@ -2,7 +2,7 @@
 // @name         Pocket - Open original URLs
 // @description  Opens original links instead of article view
 // @author       Jorengarenar
-// @homepageURL  https://joren.ga
+// @namespace    https://joren.ga
 // @version      0.5.1
 // @match        https://getpocket.com/*
 // @run-at       document-end

@@ -3,6 +3,7 @@
 // @description  Collapse comment tree without scrolling to its root (similar as on Reddit New)
 // @version      0.4.0
 // @author       Jorengarenar
+// @namespace    https://joren.ga
 // @match        https://news.ycombinator.com/item?id=*
 // @grant        GM_addStyle
 // ==/UserScript==

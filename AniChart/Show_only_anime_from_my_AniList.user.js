@@ -2,7 +2,7 @@
 // @name         AniChart - Show only anime from my AniList
 // @description  Hide anime which isn't on your AniList watching/planning list
 // @author       Jorengarenar
-// @homepageURL  https://joren.ga
+// @namespace    https://joren.ga
 // @version      0.3.3
 // @run-at       document-end
 // @include      /https?:\/\/anichart\.net\/.*/

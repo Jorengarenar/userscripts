@@ -3,6 +3,7 @@
 // @description  Replace Markdown renderer on Old Reddit with Marked
 // @version      1.0.2
 // @author       Jorengarenar
+// @namespace    https://joren.ga
 // @run-at       document-start
 // @require      https://cdn.jsdelivr.net/npm/marked/marked.min.js
 // @match        https://*.reddit.com/r/*/*

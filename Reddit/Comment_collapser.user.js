@@ -3,6 +3,7 @@
 // @description  Collapse comment trees in fashion similar to New Reddit
 // @version      1.0.0
 // @author       Jorengarenar
+// @namespace    https://joren.ga
 // @match        https://*.reddit.com/r/*/comments/*
 // @grant        GM_addStyle
 // ==/UserScript==

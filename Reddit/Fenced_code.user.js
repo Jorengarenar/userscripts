@@ -3,6 +3,7 @@
 // @description  Turns fenced code into code blocks on Old Reddit
 // @version      0.9.0
 // @author       Jorengarenar
+// @namespace    https://joren.ga
 // @run-at       document-end
 // @match        https://*.reddit.com/*
 // ==/UserScript==

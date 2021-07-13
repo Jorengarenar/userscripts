@@ -2,6 +2,7 @@
 // @name         Reddit Old - Fix Markdown
 // @version      0.1.0
 // @author       Jorengarenar
+// @namespace    https://joren.ga
 // @run-at       document-end
 // @match        https://*.reddit.com/*
 // ==/UserScript==
